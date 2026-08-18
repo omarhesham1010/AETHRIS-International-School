@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Life | Aethris International School</title>
+  <meta name="description" content="Beyond the classroom — 40+ clubs, championship sports, a spirited house system, global celebrations and leadership programs that shape character at Aethris International School.">
+  <meta name="theme-color" content="#060B1A">
+  <meta property="og:title" content="Student Life | Aethris International School">
+  <meta property="og:image" content="Images/students/international-day.png">
+  <link rel="icon" type="image/png" href="Images/brand/aethris_international_school-monogram-primary.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/theme.css"><link rel="stylesheet" href="assets/css/layout.css"><link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body class="bg-noise" data-page="student-life">
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div id="site-nav"></div>
+
+  <main id="main">
+    <header class="page-hero">
+      <div class="page-hero-media"><img src="Images/students/international-day.png" alt="Aethris international day"></div>
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Student Life</span></div>
+        <span class="eyebrow" style="color:var(--gold-300)">Beyond the Classroom</span>
+        <h1 class="display">More than a school.<br>A <span class="gold-text italic">way of belonging.</span></h1>
+        <p>Friendships that span continents, clubs that spark passions, and a community where every student finds their place — and their people.</p>
+      </div>
+    </header>
+
+    <!-- STATS -->
+    <section class="section tight">
+      <div class="container"><div class="grid cols-4">
+        <div class="card stat-card glass" data-reveal><div class="st-ico"><i data-ic="spark"></i></div><div class="stat-num"><span data-count="40">0</span><span class="suf">+</span></div><p>Clubs & activities</p></div>
+        <div class="card stat-card glass" data-reveal data-reveal-delay="1"><div class="st-ico"><i data-ic="trophy"></i></div><div class="stat-num"><span data-count="18">0</span></div><p>Sports teams</p></div>
+        <div class="card stat-card glass" data-reveal data-reveal-delay="2"><div class="st-ico"><i data-ic="globe"></i></div><div class="stat-num"><span data-count="62">0</span><span class="suf">+</span></div><p>Nationalities</p></div>
+        <div class="card stat-card glass" data-reveal data-reveal-delay="3"><div class="st-ico"><i data-ic="heart"></i></div><div class="stat-num"><span data-count="30">0</span><span class="suf">k</span></div><p>Service hours / yr</p></div>
+      </div></div>
+    </section>
+
+    <!-- CLUBS GRID -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Clubs & Activities</span>
+          <h2>Find your <span class="gold-text">passion</span></h2>
+          <p>From robotics to debate, music to community service — there's a place for every interest.</p>
+        </div>
+        <div class="filter-bar" id="facilityFilter">
+          <button class="active" data-cat="all">All</button>
+          <button data-cat="STEM">STEM</button>
+          <button data-cat="Arts">Arts</button>
+          <button data-cat="Athletics">Athletics</button>
+          <button data-cat="Leadership">Leadership</button>
+          <button data-cat="Culture">Culture</button>
+          <button data-cat="Character">Character</button>
+        </div>
+        <div class="grid cols-4" id="facilityGrid"></div>
+      </div>
+    </section>
+
+    <!-- HOUSE SYSTEM -->
+    <section class="section" style="background:linear-gradient(180deg,transparent,var(--bg-elev),transparent)">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow center" style="justify-content:center">The House System</span>
+          <h2>Four houses. <span class="gold-text">One family.</span></h2>
+          <p>Every student belongs to a house — a source of friendship, friendly rivalry and belonging that lasts a lifetime.</p>
+        </div>
+        <div class="house-grid">
+          <div class="card house-card" style="--h-color:#C9A24B" data-reveal><div class="h-crest">A</div><h4>Aurelia</h4><span class="h-motto">“Courage in gold”</span><div class="h-points">2,480 pts</div></div>
+          <div class="card house-card" style="--h-color:#2b6cb0" data-reveal data-reveal-delay="1"><div class="h-crest">M</div><h4>Meridian</h4><span class="h-motto">“Wisdom rising”</span><div class="h-points">2,315 pts</div></div>
+          <div class="card house-card" style="--h-color:#38a169" data-reveal data-reveal-delay="2"><div class="h-crest">V</div><h4>Verdant</h4><span class="h-motto">“Growth in unity”</span><div class="h-points">2,402 pts</div></div>
+          <div class="card house-card" style="--h-color:#9f7aea" data-reveal data-reveal-delay="3"><div class="h-crest">S</div><h4>Solara</h4><span class="h-motto">“Brilliance shared”</span><div class="h-points">2,268 pts</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEADERSHIP / PROGRAMS SPLIT -->
+    <section class="section">
+      <div class="container">
+        <div class="split">
+          <div class="split-media" data-reveal="left">
+            <div class="img-frame ratio-32" style="margin-bottom:18px"><img src="Images/students/student-council.png" alt="Student council" loading="lazy"></div>
+            <div class="grid cols-2" style="gap:18px">
+              <div class="img-frame ratio-43"><img src="Images/students/debate-club.png" alt="Debate club" loading="lazy"></div>
+              <div class="img-frame ratio-43"><img src="Images/students/community-service.png" alt="Community service" loading="lazy"></div>
+            </div>
+          </div>
+          <div data-reveal="right">
+            <span class="eyebrow">Leadership & Character</span>
+            <h2 style="margin:16px 0 20px">Where leaders are <span class="gold-text">grown, not born.</span></h2>
+            <p class="lede">Through student council, Model UN, debate, community service and our house system, students learn to speak with conviction, act with integrity and lead with empathy.</p>
+            <ul class="check-list" style="margin-top:24px">
+              <li><span class="ci"><i data-ic="check"></i></span><span><b>Student Council</b> — real voice in shaping campus life.</span></li>
+              <li><span class="ci"><i data-ic="check"></i></span><span><b>Model UN & Debate</b> — diplomacy and global awareness.</span></li>
+              <li><span class="ci"><i data-ic="check"></i></span><span><b>Community Service</b> — 30,000+ hours of impact each year.</span></li>
+              <li><span class="ci"><i data-ic="check"></i></span><span><b>International Day</b> — 62 nationalities, one joyful celebration.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GRADUATION JOURNEY VIDEO -->
+    <section class="section" style="background:linear-gradient(180deg,transparent,var(--bg-elev))">
+      <div class="container">
+        <div class="feature-media" data-reveal="scale">
+          <video autoplay muted loop playsinline poster="Images/students/graduation.png"><source src="Images/videos/graduation.mp4" type="video/mp4"></video>
+          <div class="fm-body">
+            <span class="chip solid" style="margin-bottom:16px">The Graduation Journey</span>
+            <h2>Every story ends in a <span class="gold-text">beginning.</span></h2>
+            <p class="lede" style="margin:16px 0 24px">From nervous first days to triumphant graduation walks, the Aethris journey is one of growth, friendship and transformation. Where will yours lead?</p>
+            <a class="btn" href="testimonials.html">Read student stories <i data-ic="arrow"></i></a>
+          </div>
+          <div class="media-tag"><span class="dot"></span> Class of 2025</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div id="site-footer"></div></footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/render.js"></script>
+  <script src="assets/js/pages.js"></script>
+  <script>
+    AErender.studentLife("#facilityGrid");
+    window.aeRefresh && window.aeRefresh();
+  </script>
+</body>
+</html>

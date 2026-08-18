@@ -1,0 +1,26 @@
+{
+  "name": "aethris-international-school",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aethris International School — a premium, world-class international school demo website. Frontend-only, no backend required (forms persist to localStorage).",
+  "type": "module",
+  "scripts": {
+    "dev": "live-server --port=5500 --no-browser --entry-file=index.html --wait=200",
+    "start": "live-server --port=5500 --no-browser --entry-file=index.html --wait=200",
+    "serve": "http-server . -p 5500 -c-1 -o",
+    "preview": "live-server --port=5500 --entry-file=index.html"
+  },
+  "keywords": [
+    "international-school",
+    "education",
+    "premium",
+    "demo",
+    "frontend"
+  ],
+  "author": "Aethris",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
+  }
+}

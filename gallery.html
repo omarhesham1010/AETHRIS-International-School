@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Aethris International School</title>
+  <meta name="description" content="A window into life at Aethris — explore our photo and video gallery capturing campus, academics, student life, sports, arts and unforgettable events.">
+  <meta name="theme-color" content="#060B1A">
+  <meta property="og:title" content="Gallery | Aethris International School">
+  <meta property="og:image" content="Images/gallery/gallery-01.png">
+  <link rel="icon" type="image/png" href="Images/brand/aethris_international_school-monogram-primary.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/theme.css"><link rel="stylesheet" href="assets/css/layout.css"><link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body class="bg-noise" data-page="gallery">
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div id="site-nav"></div>
+
+  <main id="main">
+    <header class="page-hero" style="padding-block:clamp(120px,16vh,180px) clamp(40px,6vw,70px)">
+      <div class="page-hero-media"><img src="Images/gallery/gallery-07.png" alt="Aethris gallery"></div>
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Gallery</span></div>
+        <span class="eyebrow" style="color:var(--gold-300)">A Window Into Aethris</span>
+        <h1 class="display">Life at Aethris, <span class="gold-text italic">in full colour.</span></h1>
+        <p>Every image tells a story of curiosity, community and achievement. Click any photo to view it full-screen.</p>
+      </div>
+    </header>
+
+    <!-- PHOTO GALLERY -->
+    <section class="section">
+      <div class="container">
+        <div class="filter-bar" id="galleryFilter">
+          <button class="active" data-cat="all">All</button>
+          <button data-cat="Campus">Campus</button>
+          <button data-cat="Academics">Academics</button>
+          <button data-cat="Student Life">Student Life</button>
+          <button data-cat="Innovation">Innovation</button>
+          <button data-cat="Arts">Arts</button>
+          <button data-cat="Sports">Sports</button>
+          <button data-cat="Events">Events</button>
+        </div>
+        <div class="masonry" id="galleryGrid"></div>
+      </div>
+    </section>
+
+    <!-- VIDEO GALLERY -->
+    <section class="section" style="background:linear-gradient(180deg,transparent,var(--bg-elev))">
+      <div class="container">
+        <div class="section-head center"><span class="eyebrow center" style="justify-content:center">In Motion</span><h2>The <span class="gold-text">video gallery</span></h2><p>Press play to step inside Aethris.</p></div>
+        <div class="grid cols-3" id="videoGallery"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div id="site-footer"></div></footer>
+
+  <!-- Video modal -->
+  <div class="modal-scrim" id="videoModal"><div class="modal wide"><button class="modal-close" data-modal-close><i data-ic="x"></i></button>
+    <div class="modal-head"><h3 id="videoModalTitle" class="gold-text"></h3></div>
+    <div class="modal-body"><div id="videoModalPlayer"></div></div></div></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/render.js"></script>
+  <script src="assets/js/pages.js"></script>
+  <script>
+    AErender.gallery("#galleryGrid");
+    AErender.videos("#videoGallery");
+    window.aeRefresh && window.aeRefresh();
+  </script>
+</body>
+</html>

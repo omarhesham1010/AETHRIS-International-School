@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Campus | Aethris International School</title>
+  <meta name="description" content="Take a virtual tour of Aethris's landmark 42-acre campus — Olympic pools, robotics labs, a global library, innovation center, auditorium and gardens designed to inspire.">
+  <meta name="theme-color" content="#060B1A">
+  <meta property="og:title" content="Our Campus | Aethris International School">
+  <meta property="og:image" content="Images/campus/aerial-campus.png">
+  <link rel="icon" type="image/png" href="Images/brand/aethris_international_school-monogram-primary.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/theme.css"><link rel="stylesheet" href="assets/css/layout.css"><link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body class="bg-noise" data-page="campus">
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div id="site-nav"></div>
+
+  <main id="main">
+    <!-- VIDEO HERO -->
+    <header class="page-hero" id="tour">
+      <div class="page-hero-media"><video autoplay muted loop playsinline poster="Images/campus/aerial-campus.png"><source src="Images/videos/campus-drone.mp4" type="video/mp4"></video></div>
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Campus</span></div>
+        <span class="eyebrow" style="color:var(--gold-300)">42 Acres · New Cairo</span>
+        <h1 class="display">A campus built for <span class="gold-text italic">wonder.</span></h1>
+        <p>Cinematic architecture, world-class facilities and gardens that breathe — every space at Aethris is designed to inspire curiosity and achievement.</p>
+        <div class="flex gap items-center wrap" style="margin-top:26px">
+          <a class="btn" href="#map">Explore the map <i data-ic="arrow"></i></a>
+          <a class="btn ghost" href="admissions.html#tour">Book a private tour</a>
+        </div>
+      </div>
+      <div class="media-tag"><span class="dot"></span> Drone footage</div>
+    </header>
+
+    <!-- STATS STRIP -->
+    <section class="section tight">
+      <div class="container">
+        <div class="grid cols-4">
+          <div class="card stat-card glass" data-reveal><div class="st-ico"><i data-ic="flask"></i></div><div class="stat-num"><span data-count="25">0</span><span class="suf">+</span></div><p>Labs & studios</p></div>
+          <div class="card stat-card glass" data-reveal data-reveal-delay="1"><div class="st-ico"><i data-ic="book"></i></div><div class="stat-num"><span data-count="80">0</span><span class="suf">k</span></div><p>Library titles</p></div>
+          <div class="card stat-card glass" data-reveal data-reveal-delay="2"><div class="st-ico"><i data-ic="trophy"></i></div><div class="stat-num"><span data-count="6">0</span></div><p>Athletic venues</p></div>
+          <div class="card stat-card glass" data-reveal data-reveal-delay="3"><div class="st-ico"><i data-ic="shield"></i></div><div class="stat-num"><span data-count="24">0</span>/7</div><p>Security & care</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE MAP -->
+    <section class="section" id="map">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow center" style="justify-content:center">Interactive Campus Map</span>
+          <h2>Tap a marker to <span class="gold-text">explore</span></h2>
+          <p>Hover or tap the golden markers to preview each facility across our campus.</p>
+        </div>
+        <div class="campus-map-wrap" data-reveal="scale">
+          <img class="map-base" src="Images/ui/campus-map.png" alt="Aethris campus map">
+          <div id="hotspots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FACILITIES GRID -->
+    <section class="section" id="innovation" style="background:linear-gradient(180deg,transparent,var(--bg-elev),transparent)">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">World-Class Facilities</span>
+          <h2>Every space, <span class="gold-text">purpose-built</span></h2>
+          <p>Filter our facilities to explore what makes the Aethris campus extraordinary.</p>
+        </div>
+        <div class="filter-bar" id="facilityFilter">
+          <button class="active" data-cat="all">All</button>
+          <button data-cat="academic">Academic</button>
+          <button data-cat="innovation">Innovation</button>
+          <button data-cat="sports">Sports</button>
+          <button data-cat="arts">Arts</button>
+          <button data-cat="care">Care</button>
+          <button data-cat="campus">Campus</button>
+        </div>
+        <div class="grid cols-4" id="facilityGrid"></div>
+      </div>
+    </section>
+
+    <!-- VIDEO TOUR STRIP -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head center"><span class="eyebrow center" style="justify-content:center">Step Inside</span><h2>A tour in <span class="gold-text">motion</span></h2></div>
+        <div class="grid cols-3" id="tourVideos"></div>
+      </div>
+    </section>
+
+    <!-- CARE & SAFETY -->
+    <section class="section" id="safety" style="background:linear-gradient(180deg,transparent,var(--bg-elev))">
+      <div class="container">
+        <div class="section-head center"><span class="eyebrow center" style="justify-content:center">Safety · Care · Sustainability</span><h2>A campus that <span class="gold-text">protects and nurtures</span></h2></div>
+        <div class="grid cols-2" style="gap:30px">
+          <div class="card" data-reveal><div class="care-block"><div class="cb-ico"><i data-ic="shield"></i></div><div><h4>Safety & Security</h4><p>24/7 monitored access, trained safety staff, CCTV coverage and rigorous safeguarding protocols keep every student protected — always.</p></div></div></div>
+          <div class="card" id="transport" data-reveal data-reveal-delay="1"><div class="care-block"><div class="cb-ico"><i data-ic="bus"></i></div><div><h4>Transportation</h4><p>A GPS-tracked, air-conditioned fleet with trained supervisors on every route covers all major districts of Cairo — safe, punctual, worry-free.</p></div></div></div>
+          <div class="card" id="health" data-reveal data-reveal-delay="2"><div class="care-block"><div class="cb-ico"><i data-ic="heart"></i></div><div><h4>Health Center</h4><p>An on-site medical center staffed by full-time doctors and nurses, plus counselling and wellbeing support for every learner.</p></div></div></div>
+          <div class="card" id="sustainability" data-reveal data-reveal-delay="3"><div class="care-block"><div class="cb-ico"><i data-ic="leaf"></i></div><div><h4>Sustainability</h4><p>Solar arrays, water recycling, green courtyards and a student-led eco council make Aethris a greener campus for a greener future.</p></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENING CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="feature-media" data-reveal="scale" style="min-height:380px">
+          <img src="Images/campus/evening-campus.png" alt="Aethris campus at evening" loading="lazy">
+          <div class="fm-body"><h2>See it for <span class="gold-text">yourself.</span></h2><p class="lede" style="margin:14px 0 24px">Photos capture the beauty. A visit captures the feeling. Book a private campus tour and experience Aethris first-hand.</p><a class="btn" href="admissions.html#tour">Book a private tour <i data-ic="arrow"></i></a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div id="site-footer"></div></footer>
+
+  <!-- Video modal -->
+  <div class="modal-scrim" id="videoModal"><div class="modal wide"><button class="modal-close" data-modal-close><i data-ic="x"></i></button>
+    <div class="modal-head"><h3 id="videoModalTitle" class="gold-text"></h3></div>
+    <div class="modal-body"><div id="videoModalPlayer"></div></div></div></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/render.js"></script>
+  <script src="assets/js/pages.js"></script>
+  <script>
+    AErender.hotspots("#hotspots");
+    AErender.facilities("#facilityGrid");
+    AErender.videos("#tourVideos", AETHRIS.videos.slice(0,6));
+    window.aeRefresh && window.aeRefresh();
+  </script>
+</body>
+</html>

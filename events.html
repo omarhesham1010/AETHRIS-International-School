@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | Aethris International School</title>
+  <meta name="description" content="What's happening at Aethris — science fairs, robotics championships, concerts, open houses and celebrations. Explore upcoming events and register your place.">
+  <meta name="theme-color" content="#060B1A">
+  <meta property="og:title" content="Events | Aethris International School">
+  <meta property="og:image" content="Images/events/science-fair.png">
+  <link rel="icon" type="image/png" href="Images/brand/aethris_international_school-monogram-primary.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/theme.css"><link rel="stylesheet" href="assets/css/layout.css"><link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body class="bg-noise" data-page="events">
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div id="site-nav"></div>
+
+  <main id="main">
+    <header class="page-hero">
+      <div class="page-hero-media"><img src="Images/events/robotics-competition.png" alt="Aethris events"></div>
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Events</span></div>
+        <span class="eyebrow" style="color:var(--gold-300)">Upcoming at Aethris</span>
+        <h1 class="display">Life on campus, <span class="gold-text italic">always in motion.</span></h1>
+        <p>Science fairs, robotics championships, concerts and open houses. There's always a reason to be part of the Aethris community.</p>
+      </div>
+    </header>
+
+    <!-- FEATURED EVENT -->
+    <section class="section tight">
+      <div class="container">
+        <div class="event-featured" data-reveal="scale">
+          <img src="Images/events/science-fair.png" alt="Global Science Fair" loading="lazy">
+          <div class="ef-body">
+            <span class="chip solid" style="margin-bottom:14px">Featured Event</span>
+            <h2>Global Science Fair 2026</h2>
+            <p class="lede" style="margin:14px 0 8px">300+ student projects, guest scientists and live experiments across every discipline. The highlight of our academic calendar.</p>
+            <div class="ec-meta" style="color:rgba(255,255,255,.8);margin:6px 0 22px"><span><i data-ic="calendar"></i> Oct 14, 2026</span><span><i data-ic="clock"></i> 9:00 AM – 3:00 PM</span><span><i data-ic="pin"></i> Innovation Center</span></div>
+            <button class="btn" data-register="Global Science Fair 2026">Register your place <i data-ic="arrow"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS GRID -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">Full Calendar</span><h2>Upcoming <span class="gold-text">events</span></h2><p>Filter by category and reserve your place at any event.</p></div>
+        <div class="filter-bar" id="eventFilter">
+          <button class="active" data-cat="all">All</button>
+          <button data-cat="Academic">Academic</button>
+          <button data-cat="STEM">STEM</button>
+          <button data-cat="Arts">Arts</button>
+          <button data-cat="Athletics">Athletics</button>
+          <button data-cat="Community">Community</button>
+          <button data-cat="Admissions">Admissions</button>
+          <button data-cat="Ceremony">Ceremony</button>
+        </div>
+        <div class="grid cols-3" id="eventGrid"></div>
+      </div>
+    </section>
+
+    <!-- PAST EVENTS GALLERY -->
+    <section class="section" style="background:linear-gradient(180deg,transparent,var(--bg-elev))">
+      <div class="container">
+        <div class="section-head center"><span class="eyebrow center" style="justify-content:center">Memories Made</span><h2>Moments from <span class="gold-text">past events</span></h2></div>
+        <div class="grid cols-4" id="pastGallery"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div id="site-footer"></div></footer>
+
+  <!-- Registration modal -->
+  <div class="modal-scrim" id="eventRegModal"><div class="modal"><button class="modal-close" data-modal-close><i data-ic="x"></i></button>
+    <div class="modal-head"><span class="chip solid" style="margin-bottom:12px">Event Registration</span><h3>Reserve your place at <span id="regEventTitle" class="gold-text"></span></h3></div>
+    <div class="modal-body"><form id="eventRegForm"><input type="hidden" id="regEventInput" name="event">
+      <div class="form-grid"><div class="field"><label>Full name <span class="req">*</span></label><input name="name" required><div class="err-msg">Please enter your name</div></div><div class="field"><label>Email <span class="req">*</span></label><input type="email" name="email" required><div class="err-msg">Valid email required</div></div></div>
+      <div class="form-grid"><div class="field"><label>Phone</label><input name="phone"></div><div class="field"><label>Guests</label><select name="guests"><option>1</option><option>2</option><option>3</option><option>4+</option></select></div></div>
+      <button class="btn block lg" type="submit">Confirm Registration</button></form></div></div></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/render.js"></script>
+  <script src="assets/js/pages.js"></script>
+  <script>
+    AErender.events("#eventGrid");
+    AErender.gallery("#pastGallery", AETHRIS.gallery.slice(0,8));
+    window.aeRefresh && window.aeRefresh();
+  </script>
+</body>
+</html>
