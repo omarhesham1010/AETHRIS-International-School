@@ -523,7 +523,7 @@
     lb.className = "lightbox"; lb.id = "lightbox";
     lb.innerHTML = `<button class="lb-close" aria-label="Close">${ic("x")}</button>
       <button class="lb-nav prev" aria-label="Previous">${ic("arrow")}</button>
-      <img src="" alt=""><button class="lb-nav next" aria-label="Next">${ic("arrow")}</button>
+      <img alt=""><button class="lb-nav next" aria-label="Next">${ic("arrow")}</button>
       <div class="lb-cap"></div>`;
     document.body.appendChild(lb);
     const img = $("img", lb), cap = $(".lb-cap", lb);
