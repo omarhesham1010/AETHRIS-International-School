@@ -87,7 +87,7 @@
           { icon: "plane", label: "Aviation & Aerospace", desc: "Elite program", href: "academics.html#aviation" },
         ]},
       ],
-      feature: { img: "academics/stem-program.png", chip: "Interactive", title: "Find Your Best-Fit Program", desc: "A 60-second quiz that matches your child to the perfect Aethris pathway.", cta: "Take the quiz", href: "academics.html#finder" },
+      feature: { img: "academics/stem-program.webp", chip: "Interactive", title: "Find Your Best-Fit Program", desc: "A 60-second quiz that matches your child to the perfect Aethris pathway.", cta: "Take the quiz", href: "academics.html#finder" },
     },
     campus: {
       cols: [
@@ -613,9 +613,18 @@
     $$("[required]", form).forEach(input => input.addEventListener("input", () => input.closest(".field")?.classList.remove("error")));
   };
 
-  /* ---------- Video autoplay + slow-motion (feels longer & more cinematic) ---------- */
+  /* ---------- Video autoplay + slow-motion (feels longer & more cinematic) ----------
+     Videos marked data-lazy-video sit below the first screen: they download only
+     when scrolled near, and pause again once they leave the view. */
   function initVideos() {
-    $$("video[autoplay]:not(.vid-bound)").forEach(v => {
+    const play = v => { const p = v.play(); if (p && p.catch) p.catch(() => {}); };
+    const lazy = "IntersectionObserver" in window
+      ? new IntersectionObserver(entries => entries.forEach(({ target, isIntersecting }) => {
+          if (isIntersecting) play(target);
+          else if (!target.paused) target.pause();
+        }), { rootMargin: "200px 0px" })
+      : null;
+    $$("video[autoplay]:not(.vid-bound), video[data-lazy-video]:not(.vid-bound)").forEach(v => {
       v.classList.add("vid-bound");
       v.muted = true; v.setAttribute("playsinline", "");
       const rate = parseFloat(v.dataset.rate) || 0.6;
@@ -623,7 +632,8 @@
       setRate();
       v.addEventListener("loadedmetadata", setRate);
       v.addEventListener("play", setRate);
-      const p = v.play(); if (p && p.catch) p.catch(() => {});
+      if (lazy && v.hasAttribute("data-lazy-video")) lazy.observe(v);
+      else play(v);
     });
   }
 

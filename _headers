@@ -1,3 +1,8 @@
 /*
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
+
+# Photos and videos keep their names when replaced, so a week is a safe
+# browser cache; pages, CSS and JS revalidate on every visit.
+/Images/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400

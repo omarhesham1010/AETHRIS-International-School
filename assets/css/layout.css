@@ -26,6 +26,11 @@
 .topbar .tb-links span { display: inline-flex; align-items: center; gap: 6px; }
 @media (max-width: 820px) { .topbar .tb-links { display: none; } }
 
+/* ui.js fills #site-nav after the page is parsed. Until then, hold the
+   announcement bar + navbar height so the page does not jump down. */
+#site-nav:empty { display: block; height: 129px; }
+@media (max-width: 820px) { #site-nav:empty { height: 96px; } }
+
 /* ---------- Navbar ---------- */
 .nav {
   position: sticky; top: 0; z-index: 1040;

@@ -7,7 +7,7 @@
   <meta name="description" content="Hear from the families, students and alumni of Aethris International School — real voices sharing real stories of growth, belonging and world-class achievement.">
   <meta name="theme-color" content="#060B1A">
   <meta property="og:title" content="Success Stories | Aethris International School">
-  <meta property="og:image" content="Images/testimonials/family.png">
+  <meta property="og:image" content="Images/testimonials/family.webp">
   <link rel="icon" type="image/png" href="Images/brand/aethris_international_school-monogram-primary.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -35,7 +35,7 @@ html[lang^="ar"] .tm-credit__en{display:none}
 
   <main id="main">
     <header class="page-hero" style="padding-block:clamp(120px,16vh,180px) clamp(40px,6vw,70px)">
-      <div class="page-hero-media"><img src="Images/testimonials/family.png" alt="Aethris family"></div>
+      <div class="page-hero-media"><img fetchpriority="high" src="Images/testimonials/family.webp" alt="Aethris family"></div>
       <div class="container">
         <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Success Stories</span></div>
         <span class="eyebrow" style="color:var(--gold-300)">Voices of Aethris</span>
@@ -90,7 +90,7 @@ html[lang^="ar"] .tm-credit__en{display:none}
     <section class="section" style="background:linear-gradient(180deg,transparent,var(--bg-elev))">
       <div class="container">
         <div class="feature-media" data-reveal="scale" style="min-height:380px">
-          <video autoplay muted loop playsinline poster="Images/students/graduation-ceremony.webp"><source src="Images/videos/graduation.mp4" type="video/mp4"></video>
+          <video data-lazy-video muted loop playsinline preload="none" poster="Images/students/graduation-ceremony.webp"><source src="Images/videos/graduation.mp4" type="video/mp4"></video>
           <div class="fm-body"><span class="chip solid" style="margin-bottom:14px">Alumni</span><h2>Once Aethris, <span class="gold-text">always Aethris.</span></h2><p class="lede" style="margin:14px 0 24px">Our alumni network spans the globe — a lifelong family of doctors, founders, engineers, artists and leaders who began their story right here.</p><a class="btn" href="admissions.html#apply">Start your story <i data-ic="arrow"></i></a></div>
         </div>
       </div>

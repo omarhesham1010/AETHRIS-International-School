@@ -37,7 +37,7 @@ const AETHRIS = {
       short: "An inquiry-driven, globally minded framework that develops critical thinkers and confident, principled world citizens.",
       focus: ["Theory of Knowledge", "Extended Essay", "CAS portfolio", "Bilingual diploma"],
       careers: ["Diplomacy", "Research", "Global Business", "Design"], age: "3–18", fit: ["global", "rigorous", "flexible"] },
-    { id: "stem", name: "STEM Excellence", cat: "specialist", img: "academics/stem-program.png", tag: "Signature Track",
+    { id: "stem", name: "STEM Excellence", cat: "specialist", img: "academics/stem-program.webp", tag: "Signature Track",
       short: "A hands-on science, technology, engineering and mathematics track powered by our advanced innovation labs.",
       focus: ["Applied engineering", "Data & computation", "Research mentorship", "Global STEM olympiads"],
       careers: ["Software", "Biotech", "Robotics", "Data Science"], age: "10–18", fit: ["stem", "rigorous"] },
@@ -72,14 +72,14 @@ const AETHRIS = {
     { stage: "Elementary", age: "Grades 1–5", img: "students/elementary.webp", desc: "Strong academic foundations blended with creativity, coding and character.", skills: ["Core literacy & math", "First coding", "Creative arts"] },
     { stage: "Middle School", age: "Grades 6–8", img: "students/middle-school.webp", desc: "Learners stretch into STEM, languages and leadership as identity forms.", skills: ["STEM immersion", "Leadership", "Global languages"] },
     { stage: "High School", age: "Grades 9–12", img: "students/high-school.webp", desc: "Rigorous diplomas, specialist tracks and university-grade research.", skills: ["AP / A-Level / IB", "Research & internships", "College counseling"] },
-    { stage: "Graduation", age: "Class of Aethris", img: "students/graduation.png", desc: "Confident graduates ready to lead, create and change the world.", skills: ["University offers", "Scholarships", "Alumni network"] },
+    { stage: "Graduation", age: "Class of Aethris", img: "students/graduation.webp", desc: "Confident graduates ready to lead, create and change the world.", skills: ["University offers", "Scholarships", "Alumni network"] },
     { stage: "Global Universities", age: "Beyond", img: "students/graduation-ceremony.webp", desc: "Alumni thrive at leading universities across six continents.", skills: ["Top 100 placements", "Global careers", "Lifelong network"] },
   ],
 
   facilities: [
-    { id: "aerial", name: "The Campus", cat: "campus", img: "campus/aerial-campus.png", desc: "42 acres of gardens, courtyards and light-filled academic wings.", x: 50, y: 18 },
-    { id: "main", name: "Academic Hall", cat: "academic", img: "campus/main-building.png", desc: "The heart of Aethris — grand, glass and full of learning.", x: 46, y: 40 },
-    { id: "entrance", name: "Grand Entrance", cat: "campus", img: "campus/entrance.png", desc: "A welcoming, secure arrival plaza for every family.", x: 30, y: 62 },
+    { id: "aerial", name: "The Campus", cat: "campus", img: "campus/aerial-campus.webp", desc: "42 acres of gardens, courtyards and light-filled academic wings.", x: 50, y: 18 },
+    { id: "main", name: "Academic Hall", cat: "academic", img: "campus/main-building.webp", desc: "The heart of Aethris — grand, glass and full of learning.", x: 46, y: 40 },
+    { id: "entrance", name: "Grand Entrance", cat: "campus", img: "campus/entrance.webp", desc: "A welcoming, secure arrival plaza for every family.", x: 30, y: 62 },
     { id: "library", name: "Global Library", cat: "academic", img: "campus/library.webp", desc: "80,000+ titles, silent study pods and digital archives.", x: 62, y: 34 },
     { id: "robotics", name: "Robotics Lab", cat: "innovation", img: "campus/robotics-lab.webp", desc: "FIRST-grade robotics bay with fabrication and 3D printing.", x: 72, y: 52 },
     { id: "science", name: "Science Labs", cat: "innovation", img: "campus/science-lab.webp", desc: "Physics, chemistry and biology labs built to university spec.", x: 38, y: 30 },
@@ -109,7 +109,7 @@ const AETHRIS = {
     { name: "Young Entrepreneurs", img: "students/entrepreneurship.webp", cat: "Leadership", desc: "Pitching real ventures to real investors." },
     { name: "Student Council", img: "students/student-council.webp", cat: "Leadership", desc: "Student voices shaping campus life." },
     { name: "Community Service", img: "students/community-service.webp", cat: "Character", desc: "Giving back across Cairo and beyond." },
-    { name: "International Day", img: "students/international-day.png", cat: "Culture", desc: "62 nationalities, one joyful celebration." },
+    { name: "International Day", img: "students/international-day.webp", cat: "Culture", desc: "62 nationalities, one joyful celebration." },
   ],
 
   faculty: [
@@ -126,7 +126,7 @@ const AETHRIS = {
   ],
 
   events: [
-    { title: "Global Science Fair", date: "2026-10-14", cat: "Academic", img: "events/science-fair.png", featured: true, desc: "300+ student projects, guest scientists and live experiments across every discipline.", time: "9:00 AM – 3:00 PM", loc: "Innovation Center" },
+    { title: "Global Science Fair", date: "2026-10-14", cat: "Academic", img: "events/science-fair.webp", featured: true, desc: "300+ student projects, guest scientists and live experiments across every discipline.", time: "9:00 AM – 3:00 PM", loc: "Innovation Center" },
     { title: "International Robotics Championship", date: "2026-11-08", cat: "STEM", img: "events/robotics-competition.webp", desc: "Aethris hosts the regional FIRST robotics finals with teams from 12 nations.", time: "10:00 AM – 6:00 PM", loc: "Grand Auditorium" },
     { title: "Autumn Open House", date: "2026-09-27", cat: "Admissions", img: "events/open-house.webp", desc: "Tour the campus, meet faculty and discover the Aethris difference first-hand.", time: "10:00 AM – 1:00 PM", loc: "Grand Entrance" },
     { title: "Cultural Diversity Day", date: "2026-12-05", cat: "Community", img: "events/cultural-day.webp", desc: "A joyful celebration of 62 nationalities through food, dance and story.", time: "11:00 AM – 4:00 PM", loc: "Central Courtyard" },
@@ -139,7 +139,7 @@ const AETHRIS = {
   ],
 
   gallery: [
-    { img: "gallery/gallery-01.png", cat: "Campus", title: "Golden hour over the academic wing" },
+    { img: "gallery/gallery-01.webp", cat: "Campus", title: "Golden hour over the academic wing" },
     { img: "gallery/gallery-02.webp", cat: "Academics", title: "Deep focus in the science lab" },
     { img: "gallery/gallery-03.webp", cat: "Student Life", title: "Collaboration in the commons" },
     { img: "gallery/gallery-04.webp", cat: "Innovation", title: "Building the future in robotics" },
@@ -152,14 +152,14 @@ const AETHRIS = {
   ],
 
   videos: [
-    { src: "videos/campus-drone.mp4", title: "Campus from Above", poster: "campus/aerial-campus.png", cat: "Campus" },
+    { src: "videos/campus-drone.mp4", title: "Campus from Above", poster: "campus/aerial-campus.webp", cat: "Campus" },
     { src: "videos/classroom.mp4", title: "Inside the Classroom", poster: "campus/classroom.webp", cat: "Academics" },
     { src: "videos/robotics.mp4", title: "Robotics in Action", poster: "campus/robotics-lab.webp", cat: "Innovation" },
     { src: "videos/innovation.mp4", title: "The Innovation Center", poster: "campus/innovation-center.webp", cat: "Innovation" },
     { src: "videos/library.mp4", title: "The Global Library", poster: "campus/library.webp", cat: "Campus" },
     { src: "videos/football.mp4", title: "On the Field", poster: "campus/football-field.webp", cat: "Sports" },
     { src: "videos/swimming.mp4", title: "The Aquatic Center", poster: "campus/swimming-pool.webp", cat: "Sports" },
-    { src: "videos/graduation.mp4", title: "Graduation Day", poster: "students/graduation.png", cat: "Community" },
+    { src: "videos/graduation.mp4", title: "Graduation Day", poster: "students/graduation.webp", cat: "Community" },
     { src: "videos/cafeteria.mp4", title: "Dining Commons", poster: "campus/cafeteria.webp", cat: "Campus" },
   ],
 
@@ -172,7 +172,7 @@ const AETHRIS = {
       quote: "The AI lab changed my life. I built my first machine-learning model at 16 and now I'm heading to study Computer Science abroad.", rating: 5 },
     { name: "Yousef Adel", role: "Alumnus · Class of 2021", img: "testimonials/alumni-01.webp", type: "Alumni",
       quote: "Aethris prepared me for university in ways I only understood once I arrived. I was years ahead in confidence and thinking.", rating: 5 },
-    { name: "The Okafor Family", role: "Parents · Three children", img: "testimonials/family.png", type: "Family",
+    { name: "The Okafor Family", role: "Parents · Three children", img: "testimonials/family.webp", type: "Family",
       quote: "Three children, three completely different personalities — and Aethris sees and nurtures each one individually. Unmatched.", rating: 5 },
   ],
 
