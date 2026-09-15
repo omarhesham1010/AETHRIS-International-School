@@ -1,0 +1,11 @@
+# Files that are part of the repository but not the website.
+.git
+.vercel
+.wrangler
+node_modules
+README.md
+package.json
+package-lock.json
+wrangler.jsonc
+vercel.json
+.assetsignore

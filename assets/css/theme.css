@@ -327,12 +327,12 @@ i[data-ic] svg { width: 1em; height: 1em; }
 [data-theme="light"] .bg-mesh img { mix-blend-mode: multiply; opacity: 0.35; }
 .bg-grid {
   position: absolute; inset: 0; z-index: 0; pointer-events: none;
-  background-image: url("../../Images/backgrounds/grid.png");
+  background-image: url("../../Images/backgrounds/grid.webp");
   background-size: 640px; opacity: 0.05;
 }
 .bg-noise::after {
   content: ""; position: fixed; inset: 0; z-index: 9999; pointer-events: none;
-  background-image: url("../../Images/backgrounds/noise.png");
+  background-image: url("../../Images/backgrounds/noise.webp");
   background-size: 260px; opacity: 0.035; mix-blend-mode: overlay;
 }
 .orb { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.5; pointer-events: none; z-index: 0; }

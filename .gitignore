@@ -6,3 +6,6 @@ dist/
 .idea/
 
 .vercel
+
+# Cloudflare wrangler local state
+.wrangler

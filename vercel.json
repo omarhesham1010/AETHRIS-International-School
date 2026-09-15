@@ -1,0 +1,5 @@
+{
+  "redirects": [
+    { "source": "/:path(.*)", "destination": "https://aethris.techmate-hub.com/:path", "permanent": true }
+  ]
+}

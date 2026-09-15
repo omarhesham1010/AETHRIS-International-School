@@ -58,7 +58,7 @@
 
   /* ---------- Brand lockup ---------- */
   function brandLockup(cls = "") {
-    return `<span class="brand-badge"><img src="${IMG}/brand/aethris_international_school-monogram-primary.png" alt="Aethris crest"></span>
+    return `<span class="brand-badge"><img src="${IMG}/brand/aethris_international_school-monogram-primary.webp" alt="Aethris crest"></span>
       <span class="brand-txt"><b>AETHRIS</b><small>International School</small></span>`;
   }
 
@@ -102,7 +102,7 @@
           { icon: "leaf", label: "Sustainability", desc: "A greener campus", href: "campus.html#sustainability" },
         ]},
       ],
-      feature: { img: "campus/evening-campus.png", chip: "42 Acres", title: "A Campus Built for Wonder", desc: "Cinematic architecture, world-class labs and gardens that inspire.", cta: "Take the tour", href: "campus.html" },
+      feature: { img: "campus/evening-campus.webp", chip: "42 Acres", title: "A Campus Built for Wonder", desc: "Cinematic architecture, world-class labs and gardens that inspire.", cta: "Take the tour", href: "campus.html" },
     },
     more: {
       cols: [
@@ -117,7 +117,7 @@
           { icon: "download", label: "Prospectus", desc: "Download the brochure", href: "admissions.html#prospectus" },
         ]},
       ],
-      feature: { img: "students/happy-students.png", chip: "Join Us", title: "Begin Your Aethris Journey", desc: "Apply, book a tour or speak with our admissions concierge today.", cta: "Apply now", href: "admissions.html#apply" },
+      feature: { img: "students/happy-students.webp", chip: "Join Us", title: "Begin Your Aethris Journey", desc: "Apply, book a tour or speak with our admissions concierge today.", cta: "Apply now", href: "admissions.html#apply" },
     },
   };
 
@@ -256,7 +256,7 @@
       </div>
       <div class="foot-bottom">
         <div class="foot-badges">
-          <img src="${IMG}/brand/seal.png" alt="Aethris accreditation seal" title="Accredited Institution">
+          <img src="${IMG}/brand/seal.webp" alt="Aethris accreditation seal" title="Accredited Institution">
           <span>© ${new Date().getFullYear()} Aethris International School · New Cairo, Egypt</span>
         </div>
         <div class="flex gap items-center">

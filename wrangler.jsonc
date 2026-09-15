@@ -1,0 +1,14 @@
+{
+  // Served by Cloudflare as static files at https://aethris.techmate-hub.com.
+  // Deploy: npx wrangler deploy  (Cloudflare account from wrangler login)
+  "name": "demo-aethris",
+  "compatibility_date": "2026-09-14",
+  "assets": {
+    "directory": ".",
+    "html_handling": "drop-trailing-slash",
+    "not_found_handling": "none"
+  },
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [{ "pattern": "aethris.techmate-hub.com", "custom_domain": true }]
+}
