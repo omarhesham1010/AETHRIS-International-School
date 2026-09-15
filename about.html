@@ -14,12 +14,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/theme.css"><link rel="stylesheet" href="assets/css/layout.css"><link rel="stylesheet" href="assets/css/pages.css">
   <style data-techmate-credit>
-.tm-credit{position:relative;z-index:2;margin:0;padding:10px 16px;background:#050608;color:#9ba1ad;font-family:inherit;font-size:12px;font-weight:500;line-height:1.5;letter-spacing:.01em;text-align:center}
-.tm-credit a{color:#fff;font-weight:700;text-decoration:none}
-.tm-credit a:hover,.tm-credit a:focus-visible{text-decoration:underline}
+@font-face{font-family:"TechMate Sora";src:url("https://techmate-hub.com/brand/credit/sora.woff2") format("woff2");font-weight:500 700;font-style:normal;font-display:swap}
+@font-face{font-family:"TechMate Cairo";src:url("https://techmate-hub.com/brand/credit/cairo.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+.tm-credit[data-techmate-credit]{position:relative;z-index:2;margin:0;padding:12px 16px;background:#050915 radial-gradient(70% 180% at 50% 0%,rgba(47,107,255,.24),rgba(47,107,255,0) 70%);border-top:1px solid rgba(79,140,255,.28);color:#a9b3c7;font-family:"TechMate Sora",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:12.5px;font-weight:500;line-height:1.6;letter-spacing:0;text-align:center}
+.tm-credit[data-techmate-credit] .tm-credit__ar{font-family:"TechMate Cairo",Tahoma,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:13px}
+.tm-credit[data-techmate-credit] a{display:inline-flex;align-items:center;gap:6px;margin:0 5px;padding:3px 7px 3px 9px;direction:ltr;unicode-bidi:isolate;border:1px solid rgba(79,140,255,.6);border-radius:999px;background:rgba(47,107,255,.16);color:#fff;font-family:"TechMate Sora",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:12.5px;font-weight:700;letter-spacing:.01em;text-decoration:none;vertical-align:middle;box-shadow:0 0 16px -4px rgba(47,107,255,.7);transition:background-color .2s ease,border-color .2s ease,box-shadow .2s ease,transform .2s ease}
+.tm-credit[data-techmate-credit] a::before{content:"";flex:none;width:9px;height:9px;background-color:#9dbcff;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M10 10 2.5 2.5M2.5 8.5V2.5h6' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M10 10 2.5 2.5M2.5 8.5V2.5h6' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat}
+.tm-credit[data-techmate-credit] a::after{content:"";flex:none;width:18px;height:15px;background:url("https://techmate-hub.com/brand/credit/logo.png") center/contain no-repeat}
+.tm-credit[data-techmate-credit] a:hover,.tm-credit[data-techmate-credit] a:focus-visible{border-color:#9dbcff;background-color:rgba(47,107,255,.34);box-shadow:0 0 24px -2px rgba(47,107,255,.95);transform:translateY(-1px)}
+.tm-credit[data-techmate-credit] a:hover::before,.tm-credit[data-techmate-credit] a:focus-visible::before{background-color:#fff}
+.tm-credit[data-techmate-credit] a:focus-visible{outline:2px solid #9dbcff;outline-offset:2px}
 .tm-credit__ar{display:none}
 html[lang^="ar"] .tm-credit__ar{display:inline}
 html[lang^="ar"] .tm-credit__en{display:none}
+@media (prefers-reduced-motion:reduce){.tm-credit[data-techmate-credit] a{transition:none}.tm-credit[data-techmate-credit] a:hover,.tm-credit[data-techmate-credit] a:focus-visible{transform:none}}
   </style>
 </head>
 <body class="bg-noise" data-page="about">
